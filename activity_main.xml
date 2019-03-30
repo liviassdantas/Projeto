@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+<!--implementation 'com.android.support:design:28.0.0' faz o TextViewInput funcionar-->
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/n_os"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/n_os"
+        android:inputType="number"/>
+     </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/lista_servico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/lista_servico"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prod"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cliente"/>
+    </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/endereco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:hint="@string/endereco"/>
+            <EditText
+                android:id="@+id/num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:hint="@string/numero"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/bairro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/bairro"
+                android:layout_weight="60"
+                />
+            <EditText
+                android:id="@+id/cidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/cidade"
+                android:layout_weight="40"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/Red"
+            android:text="Salvar"
+            android:textColor="@color/white"
+            />
+
+
+
+
+</LinearLayout>

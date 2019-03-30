@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Projeto</string>
+    <string-array name="lista_servico">
+        <item>Instalação</item>
+        <item>Reparo</item>
+        <item>Desinstalação</item>
+    </string-array>
+    <string name="n_os">Número da OS</string>
+    <string name="prod">Produto</string>
+    <string name="cliente">Cliente</string>
+    <string name="endereco">Endereço</string>
+    <string name="numero">Número</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="erroTexto">Digite o número da OS</string>
+    <string name="app_nome">Projeto</string>
+
+</resources>
